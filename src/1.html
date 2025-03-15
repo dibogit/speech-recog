@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Support</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #74ebd5, #acb6e5);
+            text-align: center;
+            color: #fff;
+        }
+        header {
+            padding: 20px;
+            font-size: 24px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+        .hero {
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+        .hero:hover {
+            transform: scale(1.05);
+        }
+        .hero img {
+            width: 200px;
+            border-radius: 50%;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background: #ff9a8b;
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #ff6f61;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Mental Wellness</h1>
+        <p>Your journey to mental well-being starts here.</p>
+    </header>
+    <section class="hero">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.BwSfXUuJpkxwpBDILj1xuwHaHa&pid=Api&P=0&h=180" alt="A calming nature scene">
+        <h2>Find Peace & Support</h2>
+        <button onclick="showResources()">Get Help</button>
+    </section>
+    <section id="resources" class="hidden">
+        <h2>Helpful Resources</h2>
+        <ul>
+            <li><a href="https://www.mentalhealth.gov/" target="_blank">Mental Health Gov</a></li>
+            <li><a href="https://www.nami.org/" target="_blank">National Alliance on Mental Illness</a></li>
+            <li><a href="https://www.who.int/health-topics/mental-health" target="_blank">WHO Mental Health</a></li>
+        </ul>
+    </section>
+    <script>
+        function showResources() {
+            document.getElementById('resources').classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
